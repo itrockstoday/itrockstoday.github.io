@@ -6,17 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <embed name="daleZeldaDale" src="daleZeldaDale.mp3" loop="true" hidden="true" autostart="true">
+    <!-- <embed name="daleZeldaDale" src="/daleZeldaDale.mp3" loop="true" hidden="true" autostart="true"> -->
+    <audio controls autoplay>
+        <source src="/daleZeldaDale.mp3" type="audio/mpeg">
+    </audio>
     <style>
         body {
-          background-image: url('background.jpg');
+          background-image: url('/background.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
         }
         @font-face {
         font-family: myFirstFont;
-        src: url('HyliaSerifBeta-Regular.otf');
+        src: url('/HyliaSerifBeta-Regular.otf');
         }
       
         div {
@@ -24,6 +27,10 @@
         }
     </style>
     <!-- Display the countdown timer in an element -->
+    <br>
+    <br>
+    <br>
+    <br>
     <marquee height="800px" behavior="scroll" direction="up">
     <div><p style="font-size: 96px;">Are you prepared for the journey ahead?</p></div>
     <div><p style="color: white; font-size: 32px;" id="demo"></p></div>
